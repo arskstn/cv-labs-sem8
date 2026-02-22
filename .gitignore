@@ -1,0 +1,27 @@
+venv/
+*.log
+.env
+.continue
+.continue/
+.continue/agents
+#hello there!
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+compile_commands.json
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+dist/
+build/
+install/
+log/
