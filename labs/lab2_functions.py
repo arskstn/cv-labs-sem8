@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+import math
 def show_images(images_sequence, rows=2, cols=4, figsize=(12,6)):
 
     fig, axes = plt.subplots(rows, cols, figsize=figsize)
