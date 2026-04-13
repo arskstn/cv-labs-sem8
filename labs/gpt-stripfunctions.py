@@ -1,5 +1,5 @@
-input_file = "lab2.py"
-output_file = "lab2_functions.py"
+input_file = "lab3_functions.py"
+output_file = "lab3_functions.py"
 
 with open(input_file, "r", encoding="utf-8") as f:
     lines = f.readlines()
