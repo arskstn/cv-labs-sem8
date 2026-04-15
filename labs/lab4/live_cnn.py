@@ -184,8 +184,8 @@ def load_model(cls, path):
 
 
 def main():
-    det_model = load_model(FaceDetectorCNN, 'face_detector_cnn.pth')
-    emo_model = load_model(lambda: EmotionCNN(len(EMOTIONS)), 'emotion_cnn_noadded.pth')
+    det_model = load_model(FaceDetectorCNN, '../lab4-trained/face_detector_cnn.pth')
+    emo_model = load_model(lambda: EmotionCNN(len(EMOTIONS)), '../lab4-trained/emotion_cnn_noadded.pth')
 
     cap = cv2.VideoCapture(CAM_INDEX)
     if not cap.isOpened():

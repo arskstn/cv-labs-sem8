@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 source_dir = '/Users/arseniikostin/Downloads/dataset'
-target_dir = 'dataset_clean'
+target_dir = '../dataset_clean'
 
 classes = ['sad', 'happy', 'angry', 'surprised']
 target_size = (224, 224)

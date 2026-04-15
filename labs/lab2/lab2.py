@@ -28,6 +28,7 @@ import random
 from IPython.display import Image
 get_ipython().run_line_magic('matplotlib', 'inline')
 import math
+import sys; sys.path.insert(0, '../lab1')
 import lab1_functions as lb1
 import os
 print(os.getcwd())
@@ -41,14 +42,14 @@ print(os.listdir())
 # In[5]:
 
 
-image1=cv2.cvtColor(cv2.imread('sequence1.jpeg'), cv2.COLOR_BGR2RGB)
-image2=cv2.cvtColor(cv2.imread('sequence2.jpeg'), cv2.COLOR_BGR2RGB)
-image3=cv2.cvtColor(cv2.imread('sequence3.jpeg'), cv2.COLOR_BGR2RGB)
-image4=cv2.cvtColor(cv2.imread('sequence4.jpeg'), cv2.COLOR_BGR2RGB)
-image5=cv2.cvtColor(cv2.imread('sequence5.jpeg'), cv2.COLOR_BGR2RGB)
-image6=cv2.cvtColor(cv2.imread('sequence6.jpeg'), cv2.COLOR_BGR2RGB)
-image7=cv2.cvtColor(cv2.imread('sequence7.jpeg'), cv2.COLOR_BGR2RGB)
-image8=cv2.cvtColor(cv2.imread('sequence8.jpeg'), cv2.COLOR_BGR2RGB)
+image1=cv2.cvtColor(cv2.imread('magnetssequence/sequence1.jpeg'), cv2.COLOR_BGR2RGB)
+image2=cv2.cvtColor(cv2.imread('magnetssequence/sequence2.jpeg'), cv2.COLOR_BGR2RGB)
+image3=cv2.cvtColor(cv2.imread('magnetssequence/sequence3.jpeg'), cv2.COLOR_BGR2RGB)
+image4=cv2.cvtColor(cv2.imread('magnetssequence/sequence4.jpeg'), cv2.COLOR_BGR2RGB)
+image5=cv2.cvtColor(cv2.imread('magnetssequence/sequence5.jpeg'), cv2.COLOR_BGR2RGB)
+image6=cv2.cvtColor(cv2.imread('magnetssequence/sequence6.jpeg'), cv2.COLOR_BGR2RGB)
+image7=cv2.cvtColor(cv2.imread('magnetssequence/sequence7.jpeg'), cv2.COLOR_BGR2RGB)
+image8=cv2.cvtColor(cv2.imread('magnetssequence/sequence8.jpeg'), cv2.COLOR_BGR2RGB)
 
 images_sequence = [image1, image2, image3, image4, image5, image6, image7, image8]
 
@@ -164,7 +165,7 @@ show_images(images_temp, 1, 2)
 # In[12]:
 
 
-img = cv2.imread('./gradient.png')
+img = cv2.imread('../../README_files/gradient.png')
 plt.imshow(img)
 
 
@@ -191,7 +192,7 @@ plt.imshow(img)
 # In[13]:
 
 
-img = cv2.imread('./harris1.png')
+img = cv2.imread('../../README_files/harris1.png')
 plt.imshow(img)
 
 
